@@ -1,7 +1,32 @@
+$white: hsl(0, 100%, 100%);
+$black: hsl(0, 0%, 0%);
+$grey: hsl(0, 0%, 85%);
+$blue-100: hsl(215, 30%, 92%);
+$blue-50: hsl(213, 100%, 98%);
+$spacing-100: 0.5rem;
+$spacing-200: 1rem;
+$spacing-300: 1.5rem;
+$spacing-400: 2rem;
+$spacing-500: 2.5rem;
+$spacing-600: 3rem;
+$spacing-800: 4rem;
+$spacing-1000: 5rem;
+$font-weigh-300: 300;
+$font-weight-400: 400;
+
+:root {
+  font-size: 16px;
+}
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", "Alata", sans-serif;
+  font-size: 0.9375rem;
 }
