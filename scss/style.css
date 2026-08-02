@@ -15,11 +15,38 @@ body {
   font-size: 0.9375rem;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .header {
   background-color: pink;
+  padding-block-start: 2.5rem;
+  padding-inline: 1.5rem;
+}
+.header .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: clamp(9rem, 6.137rem + 12.214vw, 12rem);
+}
+
+.primary-nav {
+  display: none;
 }
 
 .wrapper {
   max-width: 74rem;
-  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

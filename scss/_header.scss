@@ -1,0 +1,20 @@
+@use "base" as *;
+
+.header {
+  background-color: pink;
+  padding-block-start: $spacing-500;
+  padding-inline: $spacing-300;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  width: clamp(9rem, calc(6.137rem + 12.214vw), 12rem);
+}
+
+.primary-nav {
+  display: none;
+}
