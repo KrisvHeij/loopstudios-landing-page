@@ -1,20 +1,47 @@
 @use "base" as *;
 
 .header {
-  background-color: pink;
+  height: 650px;
   padding-block-start: $spacing-500;
   padding-inline: $spacing-300;
+  background-image: url(../images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  .wrapper {
+  .nav-top {
     display: flex;
     justify-content: space-between;
+    // align-items: center;
   }
-}
 
-.logo {
-  width: clamp(9rem, calc(6.137rem + 12.214vw), 12rem);
-}
+  .logo {
+    width: clamp(9rem, calc(6.137rem + 12.214vw), 12rem);
+    z-index: 5;
+  }
 
-.primary-nav {
-  display: none;
+  .hamburger {
+    z-index: 5;
+  }
+
+  .primary-nav {
+    position: absolute;
+    inset: 0;
+    background-color: $black;
+
+    ul {
+      position: absolute;
+      top: 200px;
+      padding-inline: $spacing-300;
+
+      li {
+        margin-block-end: $spacing-300;
+
+        .nav__link {
+          color: $white;
+          font-size: $font-size-5;
+          font-weight: $font-weigh-300;
+        }
+      }
+    }
+  }
 }

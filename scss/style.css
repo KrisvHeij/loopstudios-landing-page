@@ -30,21 +30,41 @@ button {
 }
 
 .header {
-  background-color: pink;
+  height: 650px;
   padding-block-start: 2.5rem;
   padding-inline: 1.5rem;
+  background-image: url(../images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.header .wrapper {
+.header .nav-top {
   display: flex;
   justify-content: space-between;
 }
-
-.logo {
+.header .logo {
   width: clamp(9rem, 6.137rem + 12.214vw, 12rem);
+  z-index: 5;
 }
-
-.primary-nav {
-  display: none;
+.header .hamburger {
+  z-index: 5;
+}
+.header .primary-nav {
+  position: absolute;
+  inset: 0;
+  background-color: hsl(0, 0%, 0%);
+}
+.header .primary-nav ul {
+  position: absolute;
+  top: 200px;
+  padding-inline: 1.5rem;
+}
+.header .primary-nav ul li {
+  margin-block-end: 1.5rem;
+}
+.header .primary-nav ul li .nav__link {
+  color: hsl(0, 100%, 100%);
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .wrapper {
