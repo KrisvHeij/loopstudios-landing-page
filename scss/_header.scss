@@ -25,22 +25,25 @@
 
   .primary-nav {
     position: absolute;
-    inset: 0;
+    padding-block-start: 200px;
+    padding-inline: $spacing-300;
+    inset: 0 0 0 100%;
     background-color: $black;
+    transition: all 500ms ease;
+    opacity: 0;
 
-    ul {
-      position: absolute;
-      top: 200px;
-      padding-inline: $spacing-300;
+    &.showNav {
+      inset: 0;
+      opacity: 1;
+    }
 
-      li {
-        margin-block-end: $spacing-300;
+    li {
+      margin-block-end: $spacing-300;
 
-        .nav__link {
-          color: $white;
-          font-size: $font-size-5;
-          font-weight: $font-weigh-300;
-        }
+      .nav__link {
+        color: $white;
+        font-size: $font-size-5;
+        font-weight: $font-weigh-300;
       }
     }
   }

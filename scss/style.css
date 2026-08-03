@@ -50,18 +50,21 @@ button {
 }
 .header .primary-nav {
   position: absolute;
-  inset: 0;
-  background-color: hsl(0, 0%, 0%);
-}
-.header .primary-nav ul {
-  position: absolute;
-  top: 200px;
+  padding-block-start: 200px;
   padding-inline: 1.5rem;
+  inset: 0 0 0 100%;
+  background-color: hsl(0, 0%, 0%);
+  transition: all 500ms ease;
+  opacity: 0;
 }
-.header .primary-nav ul li {
+.header .primary-nav.showNav {
+  inset: 0;
+  opacity: 1;
+}
+.header .primary-nav li {
   margin-block-end: 1.5rem;
 }
-.header .primary-nav ul li .nav__link {
+.header .primary-nav li .nav__link {
   color: hsl(0, 100%, 100%);
   font-size: 1.5rem;
   font-weight: 300;
