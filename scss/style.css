@@ -45,10 +45,16 @@ button {
   }
 }
 .header .wrapper {
-  max-width: 69.375rem;
+  max-width: 38rem;
   height: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 48rem) {
+  .header .wrapper {
+    max-width: 69.375rem;
+  }
 }
 @media (min-width: 48rem) {
   .header .nav-container {
@@ -89,7 +95,7 @@ button {
   .header .primary-nav {
     position: relative;
     inset: unset;
-    padding-top: 0;
+    padding: 0;
     background-color: transparent;
     opacity: 1;
   }
@@ -143,6 +149,11 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 48rem) {
+  .header .header-text {
+    justify-content: flex-start;
+  }
 }
 .header .header-text div {
   max-width: 650px;

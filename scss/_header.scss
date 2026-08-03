@@ -15,10 +15,16 @@
   }
 
   .wrapper {
-    max-width: 69.375rem;
+    max-width: 38rem;
+    
     height: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+
+    @media (min-width: 48rem) {
+      max-width: 69.375rem;
+    }
   }
 
   .nav-container {
@@ -64,7 +70,7 @@
     @media (min-width: 48rem) {
       position: relative;
       inset: unset;
-      padding-top: 0;
+      padding: 0;
       background-color: transparent;
       opacity: 1;
     }
@@ -122,6 +128,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: 48rem) {
+      justify-content: flex-start;
+    }
 
     div {
       max-width: 650px;
