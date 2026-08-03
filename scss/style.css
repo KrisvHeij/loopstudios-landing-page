@@ -31,17 +31,24 @@ button {
 
 .header {
   height: 650px;
-  padding-block-start: 2.5rem;
+  padding-block: 2.5rem;
   padding-inline: 1.5rem;
   background-image: url(../images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 @media (min-width: 37.5rem) {
   .header {
     background-image: url("../images/desktop/image-hero.jpg");
     background-position: center;
   }
+}
+.header .wrapper {
+  max-width: 69.375rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 48rem) {
   .header .nav-container {
@@ -105,6 +112,7 @@ button {
   color: hsl(0, 100%, 100%);
   font-size: 1.5rem;
   font-weight: 300;
+  text-transform: uppercase;
 }
 .header .primary-nav li .nav__link::after {
   content: "";
@@ -119,6 +127,7 @@ button {
     font-family: "Alata", sans-serif;
     font-size: 0.9375rem;
     font-weight: 400;
+    text-transform: capitalize;
     line-height: 1.65;
     display: flex;
     flex-direction: column;
@@ -128,6 +137,24 @@ button {
   .header .primary-nav li .nav__link:hover::after {
     transform: scaleX(1);
   }
+}
+.header .header-text {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-text div {
+  max-width: 650px;
+  padding: 1.5rem;
+  border: 2px solid hsl(0, 100%, 100%);
+}
+.header .header-text div p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: clamp(2.5rem, 0.592rem + 8.142vw, 4.5rem);
+  font-weight: 300;
+  text-transform: uppercase;
+  color: hsl(0, 100%, 100%);
 }
 
 .wrapper {
