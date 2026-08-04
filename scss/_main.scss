@@ -1,0 +1,36 @@
+@use "base" as *;
+
+main {
+  padding-block: $spacing-1000;
+  padding-inline: $spacing-300;
+}
+
+.intro {
+  text-align: center;
+
+  .intro__image {
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+
+  .intro__text h1 {
+    margin-block-end: clamp(1rem, calc(0.523rem + 2.036vw), 1.5rem);
+    padding-block-start: $spacing-600;
+    font-size: clamp(2.00rem, calc(1.046rem + 4.071vw), 3.00rem);
+    color: $black;
+    font-weight: $font-weight-300;
+    text-transform: uppercase;
+    text-wrap: balance;
+  }
+
+  .intro__text p {
+    font-family: "Alata", sans-serif;
+    color: $black;
+    opacity: 0.5;
+    text-wrap: balance;
+  }
+}
+
+.creations {
+    
+  }

@@ -43,8 +43,15 @@ $font-weight-400: 400;
 }
 
 body {
-  font-family: "Josefin Sans", "Alata", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 0.9375rem;
+  background-color: $white;
+  color: $white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 ul {

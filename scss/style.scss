@@ -1,8 +1,13 @@
 @use "base" as *;
 @use "header";
+@use "main";
 
 
 .wrapper {
-  max-width: 74rem;
-  // margin: 0 auto;
-}
+    max-width: 38rem;
+    margin: 0 auto;
+
+    @media (min-width: 48rem) {
+      max-width: 69.375rem;
+    }
+  }

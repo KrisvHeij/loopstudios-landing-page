@@ -15,16 +15,9 @@
   }
 
   .wrapper {
-    max-width: 38rem;
-    
     height: 100%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-
-    @media (min-width: 48rem) {
-      max-width: 69.375rem;
-    }
   }
 
   .nav-container {
@@ -143,7 +136,7 @@
         font-size: clamp(2.50rem, calc(0.592rem + 8.142vw), 4.50rem);
         font-weight: $font-weight-300;
         text-transform: uppercase;
-        color: $white;
+        // color: $white;
       }
     }
   }

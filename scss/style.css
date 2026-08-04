@@ -11,8 +11,15 @@
 }
 
 body {
-  font-family: "Josefin Sans", "Alata", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 0.9375rem;
+  background-color: hsl(0, 100%, 100%);
+  color: hsl(0, 100%, 100%);
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 ul {
@@ -45,16 +52,9 @@ button {
   }
 }
 .header .wrapper {
-  max-width: 38rem;
   height: 100%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-}
-@media (min-width: 48rem) {
-  .header .wrapper {
-    max-width: 69.375rem;
-  }
 }
 @media (min-width: 48rem) {
   .header .nav-container {
@@ -165,9 +165,42 @@ button {
   font-size: clamp(2.5rem, 0.592rem + 8.142vw, 4.5rem);
   font-weight: 300;
   text-transform: uppercase;
-  color: hsl(0, 100%, 100%);
+}
+
+main {
+  padding-block: 5rem;
+  padding-inline: 1.5rem;
+}
+
+.intro {
+  text-align: center;
+}
+.intro .intro__image {
+  max-width: fit-content;
+  margin: 0 auto;
+}
+.intro .intro__text h1 {
+  margin-block-end: clamp(1rem, 0.523rem + 2.036vw, 1.5rem);
+  padding-block-start: 3rem;
+  font-size: clamp(2rem, 1.046rem + 4.071vw, 3rem);
+  color: hsl(0, 0%, 0%);
+  font-weight: 300;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+.intro .intro__text p {
+  font-family: "Alata", sans-serif;
+  color: hsl(0, 0%, 0%);
+  opacity: 0.5;
+  text-wrap: balance;
 }
 
 .wrapper {
-  max-width: 74rem;
+  max-width: 38rem;
+  margin: 0 auto;
+}
+@media (min-width: 48rem) {
+  .wrapper {
+    max-width: 69.375rem;
+  }
 }/*# sourceMappingURL=style.css.map */
