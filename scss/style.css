@@ -225,6 +225,12 @@ main {
     height: 450px;
   }
 }
+.creations .creations__items_container .creations__item__inner .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, hsla(0, 0%, 0%, 0.6), hsla(0, 0%, 0%, 0));
+  transition: all 250ms ease;
+}
 .creations .creations__items_container .creations__item__inner h3 {
   position: absolute;
   left: 5%;
@@ -242,17 +248,11 @@ main {
     font-size: 2rem;
   }
 }
-.creations .creations__items_container .creations__item__inner .overlay {
-  position: absolute;
-  inset: 0;
-  background-color: hsl(0, 0%, 85%);
-  opacity: 0;
-  transition: opacity 250ms ease;
-}
 .creations .creations__items_container .creations__item__inner:hover h3 {
   color: hsl(0, 0%, 0%);
 }
 .creations .creations__items_container .creations__item__inner:hover .overlay {
+  background: hsl(0, 0%, 85%);
   opacity: 0.7;
 }
 
