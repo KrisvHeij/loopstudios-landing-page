@@ -174,12 +174,37 @@ main {
 }
 
 .intro {
+  position: relative;
+  margin-block-start: clamp(0rem, -8.889rem + 18.519vw, 5rem);
   margin-block-end: 5rem;
   text-align: center;
 }
 .intro .intro__image {
   max-width: fit-content;
   margin: 0 auto;
+}
+@media (min-width: 48rem) {
+  .intro .intro__image {
+    margin: 0;
+  }
+}
+@media (min-width: 48rem) {
+  .intro .intro__text {
+    position: absolute;
+    width: 75%;
+    bottom: 0;
+    right: 0;
+    background-color: hsl(0, 100%, 100%);
+    text-align: left;
+    padding-inline-start: 3rem;
+  }
+}
+@media (min-width: 60rem) {
+  .intro .intro__text {
+    width: 50%;
+    padding-block-start: 5rem;
+    padding-inline-start: 5rem;
+  }
 }
 .intro .intro__text h1 {
   margin-block-end: clamp(1rem, 0.523rem + 2.036vw, 1.5rem);
@@ -190,6 +215,11 @@ main {
   text-transform: uppercase;
   text-wrap: balance;
 }
+@media (min-width: 60rem) {
+  .intro .intro__text h1 {
+    padding-block-start: 0;
+  }
+}
 .intro .intro__text p {
   font-family: "Alata", sans-serif;
   color: hsl(0, 0%, 0%);
@@ -197,6 +227,12 @@ main {
   text-wrap: balance;
 }
 
+@media (min-width: 48rem) {
+  .creations {
+    margin-block-start: clamp(5rem, -3.889rem + 18.519vw, 10rem);
+    margin-block-end: 5rem;
+  }
+}
 .creations .creations__link {
   display: inline-block;
   padding-block: 1rem;
@@ -214,7 +250,14 @@ main {
   background-color: hsl(0, 0%, 0%);
 }
 .creations .creations__header {
-  margin-block-end: clamp(2rem, 3.954rem - 4.071vw, 3rem);
+  margin-block-end: clamp(2rem, -2rem + 8.333vw, 3rem);
+}
+@media (min-width: 48rem) {
+  .creations .creations__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .creations .creations__header h2 {
   font-size: clamp(2rem, 1.046rem + 4.071vw, 3rem);
@@ -225,6 +268,11 @@ main {
 }
 .creations .creations__header .creations__link {
   display: none;
+}
+@media (min-width: 48rem) {
+  .creations .creations__header .creations__link {
+    display: block;
+  }
 }
 .creations .creations__items_container {
   display: grid;
