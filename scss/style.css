@@ -230,15 +230,33 @@ main {
   display: grid;
   gap: clamp(1.5rem, 1.023rem + 2.036vw, 2rem);
 }
+@media (min-width: 48rem) {
+  .creations .creations__items_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 60rem) {
+  .creations .creations__items_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 72rem) {
+  .creations .creations__items_container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.creations .creations__items_container .creations__item {
+  margin: 0 auto;
+}
 .creations .creations__items_container .creations__item__inner {
   position: relative;
-  height: 120px;
+  height: 115px;
   overflow: hidden;
 }
 @media (min-width: 48rem) {
   .creations .creations__items_container .creations__item__inner {
-    width: 256px;
-    height: 450px;
+    width: 100%;
+    height: auto;
   }
 }
 .creations .creations__items_container .creations__item__inner .overlay {
