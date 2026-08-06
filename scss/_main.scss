@@ -34,6 +34,24 @@ main {
 
 .creations {
 
+  .creations__link {
+    display: inline-block;
+    padding-block: $spacing-200;
+    padding-inline: $spacing-400;
+    color: $black;
+    border: 1px solid $black;
+    font-size: $font-size-7;
+    font-weight: $font-weight-400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transition: all 250ms ease;
+
+    &:hover {
+      color: $white;
+      background-color: $black;
+    }
+  }
+
   .creations__header {
     margin-block-end: clamp(2rem, calc(3.954rem - 4.071vw), 3rem);
 
@@ -100,5 +118,14 @@ main {
         }
       }
     }
+  }
+
+  .creations__footer {
+     margin-block-start: $spacing-400;
+     text-align: center;
+
+     @media (min-width: 48rem) {
+      display: none;
+     }
   }
 }

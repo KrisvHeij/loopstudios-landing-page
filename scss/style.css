@@ -197,6 +197,22 @@ main {
   text-wrap: balance;
 }
 
+.creations .creations__link {
+  display: inline-block;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  color: hsl(0, 0%, 0%);
+  border: 1px solid hsl(0, 0%, 0%);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  transition: all 250ms ease;
+}
+.creations .creations__link:hover {
+  color: hsl(0, 100%, 100%);
+  background-color: hsl(0, 0%, 0%);
+}
 .creations .creations__header {
   margin-block-end: clamp(2rem, 3.954rem - 4.071vw, 3rem);
 }
@@ -254,6 +270,15 @@ main {
 .creations .creations__items_container .creations__item__inner:hover .overlay {
   background: hsl(0, 0%, 85%);
   opacity: 0.7;
+}
+.creations .creations__footer {
+  margin-block-start: 2rem;
+  text-align: center;
+}
+@media (min-width: 48rem) {
+  .creations .creations__footer {
+    display: none;
+  }
 }
 
 .wrapper {
