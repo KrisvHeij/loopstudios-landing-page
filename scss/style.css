@@ -347,6 +347,16 @@ main {
   }
 }
 
+footer {
+  padding-block: 2.5rem;
+  padding-inline: 1.5rem;
+  background-color: hsl(0, 0%, 0%);
+}
+footer .footer__logo {
+  max-width: 144px;
+  margin: 0 auto;
+}
+
 .wrapper {
   max-width: 38rem;
   margin: 0 auto;

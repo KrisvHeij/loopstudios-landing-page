@@ -1,0 +1,12 @@
+@use "base" as *;
+
+footer {
+  padding-block: $spacing-500;
+  padding-inline: $spacing-300;
+  background-color: $black;
+
+  .footer__logo {
+    max-width: 144px;
+    margin: 0 auto;
+  }
+}
