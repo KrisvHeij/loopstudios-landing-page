@@ -356,11 +356,21 @@ footer .wrapper .footer__nav .footer__logo {
   max-width: 144px;
   margin: 0 auto;
 }
+@media (min-width: 48rem) {
+  footer .wrapper .footer__nav .footer__logo {
+    margin-inline: 0;
+  }
+}
 footer .wrapper .footer__nav .secondary-nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+@media (min-width: 48rem) {
+  footer .wrapper .footer__nav .secondary-nav ul {
+    flex-direction: row;
+  }
 }
 footer .wrapper .footer__nav .secondary-nav ul .nav__link {
   font-family: "Alata", sans-serif;

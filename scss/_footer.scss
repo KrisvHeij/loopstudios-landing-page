@@ -16,6 +16,10 @@ footer {
       .footer__logo {
       max-width: 144px;
       margin: 0 auto;
+
+        @media (min-width: 48rem) {
+          margin-inline: 0;
+        }
       }
 
       .secondary-nav ul {
@@ -23,6 +27,10 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: $spacing-200;
+
+        @media (min-width: 48rem) {
+          flex-direction: row;
+        }
 
         .nav__link {
           font-family: "Alata", sans-serif;
