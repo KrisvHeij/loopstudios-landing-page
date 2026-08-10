@@ -121,6 +121,15 @@ button {
   font-weight: 300;
   text-transform: uppercase;
 }
+.header .primary-nav li .nav__link::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: hsl(0, 100%, 100%);
+  transform: scaleX(0);
+  transition: transform 250ms ease;
+}
 @media (min-width: 48rem) {
   .header .primary-nav li .nav__link {
     font-family: "Alata", sans-serif;
@@ -128,7 +137,6 @@ button {
     font-weight: 400;
     text-transform: capitalize;
     line-height: 1.65;
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
@@ -348,6 +356,12 @@ footer .wrapper {
   display: grid;
   gap: 2.5rem;
 }
+@media (min-width: 48rem) {
+  footer .wrapper {
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+}
 footer .wrapper .footer__nav {
   display: grid;
   gap: clamp(1.5rem, 3.454rem - 4.071vw, 2.5rem);
@@ -378,11 +392,38 @@ footer .wrapper .footer__nav .secondary-nav ul .nav__link {
   line-height: 1.65;
   color: hsl(0, 100%, 100%);
 }
+footer .wrapper .footer__nav .secondary-nav ul .nav__link::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 24px;
+  height: 2px;
+  background-color: hsl(0, 100%, 100%);
+  transform: scaleX(0);
+  transition: transform 250ms ease;
+}
+@media (min-width: 48rem) {
+  footer .wrapper .footer__nav .secondary-nav ul .nav__link {
+    line-height: 1.65;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  footer .wrapper .footer__nav .secondary-nav ul .nav__link:hover::after {
+    transform: scaleX(1);
+  }
+}
 footer .wrapper .footer__socials .footer__socials__icons {
   margin-block-end: clamp(1rem, 0.523rem + 2.036vw, 1.5rem);
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+@media (min-width: 48rem) {
+  footer .wrapper .footer__socials .footer__socials__icons {
+    justify-content: flex-end;
+  }
 }
 footer .wrapper .footer__socials .footer-copyright {
   font-family: "Alata", sans-serif;
@@ -390,6 +431,11 @@ footer .wrapper .footer__socials .footer-copyright {
   text-align: center;
   color: hsl(0, 100%, 100%);
   opacity: 0.5;
+}
+@media (min-width: 48rem) {
+  footer .wrapper .footer__socials .footer-copyright {
+    text-align: right;
+  }
 }
 
 .wrapper {
@@ -399,14 +445,6 @@ footer .wrapper .footer__socials .footer-copyright {
 @media (min-width: 48rem) {
   .wrapper {
     max-width: 69.375rem;
+    padding-inline: 4rem;
   }
-}
-
-.nav__link::after {
-  content: "";
-  width: 24px;
-  height: 2px;
-  background-color: hsl(0, 100%, 100%);
-  transform: scaleX(0);
-  transition: transform 250ms ease;
 }/*# sourceMappingURL=style.css.map */

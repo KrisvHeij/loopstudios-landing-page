@@ -5,19 +5,11 @@
 
 
 .wrapper {
-    max-width: 38rem;
-    margin: 0 auto;
+  max-width: 38rem;
+  margin: 0 auto;
 
-    @media (min-width: 48rem) {
-      max-width: 69.375rem;
-    }
+  @media (min-width: 48rem) {
+    max-width: 69.375rem;
+    padding-inline: $spacing-800;
   }
-
-  .nav__link::after {
-    content: "";
-    width: 24px;
-    height: 2px;
-    background-color: $white;
-    transform: scaleX(0);
-    transition: transform 250ms ease;
-  }
+}

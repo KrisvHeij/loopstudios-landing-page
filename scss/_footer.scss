@@ -9,6 +9,11 @@ footer {
     display: grid;
     gap: $spacing-500;
 
+    @media (min-width: 48rem) {
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
+    }
+
     .footer__nav {
     display: grid;
     gap: clamp(1.5rem, calc(3.454rem - 4.071vw), 2.5rem);
@@ -37,6 +42,29 @@ footer {
           font-size: $font-size-6;
           line-height: 1.65;
           color: $white;
+
+          &::after {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            width: 24px;
+            height: 2px;
+            background-color: $white;
+            transform: scaleX(0);
+            transition: transform 250ms ease;
+          }
+
+          @media (min-width: 48rem) {
+            line-height: 1.65;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: $spacing-100;
+
+            &:hover::after {
+              transform: scaleX(1);
+            }
+          }
         }
       }
     }
@@ -47,6 +75,10 @@ footer {
         display: flex;
         justify-content: center;
         gap: $spacing-200;
+
+        @media (min-width: 48rem) {
+          justify-content: flex-end;
+        }
       }
 
       .footer-copyright {
@@ -55,6 +87,10 @@ footer {
         text-align: center;
         color: $white;
         opacity: 0.5;
+
+        @media (min-width: 48rem) {
+          text-align: right;
+        }
       }
     }
   }

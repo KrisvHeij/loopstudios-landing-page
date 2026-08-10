@@ -88,14 +88,15 @@
         font-weight: $font-weight-300;
         text-transform: uppercase;
 
-        // &::after {
-        //   content: "";
-        //   width: 24px;
-        //   height: 2px;
-        //   background-color: $white;
-        //   transform: scaleX(0);
-        //   transition: transform 250ms ease;
-        // }
+        &::after {
+          content: "";
+          display: block;
+          width: 24px;
+          height: 2px;
+          background-color: $white;
+          transform: scaleX(0);
+          transition: transform 250ms ease;
+        }
 
         @media (min-width: 48rem) {
           font-family: "Alata", sans-serif;
@@ -103,7 +104,7 @@
           font-weight: $font-weight-400;
           text-transform: capitalize;
           line-height: 1.65;
-          display: flex;
+          // display: flex;
           flex-direction: column;
           align-items: center;
           gap: $spacing-100;
