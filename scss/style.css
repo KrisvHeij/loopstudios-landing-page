@@ -121,14 +121,6 @@ button {
   font-weight: 300;
   text-transform: uppercase;
 }
-.header .primary-nav li .nav__link::after {
-  content: "";
-  width: 24px;
-  height: 2px;
-  background-color: hsl(0, 100%, 100%);
-  transform: scaleX(0);
-  transition: transform 250ms ease;
-}
 @media (min-width: 48rem) {
   .header .primary-nav li .nav__link {
     font-family: "Alata", sans-serif;
@@ -348,13 +340,46 @@ main {
 }
 
 footer {
-  padding-block: 2.5rem;
+  padding-block: 4rem;
   padding-inline: 1.5rem;
   background-color: hsl(0, 0%, 0%);
 }
-footer .footer__logo {
+footer .wrapper {
+  display: grid;
+  gap: 2.5rem;
+}
+footer .wrapper .footer__nav {
+  display: grid;
+  gap: clamp(1.5rem, 3.454rem - 4.071vw, 2.5rem);
+}
+footer .wrapper .footer__nav .footer__logo {
   max-width: 144px;
   margin: 0 auto;
+}
+footer .wrapper .footer__nav .secondary-nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+footer .wrapper .footer__nav .secondary-nav ul .nav__link {
+  font-family: "Alata", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: hsl(0, 100%, 100%);
+}
+footer .wrapper .footer__socials .footer__socials__icons {
+  margin-block-end: clamp(1rem, 0.523rem + 2.036vw, 1.5rem);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+footer .wrapper .footer__socials .footer-copyright {
+  font-family: "Alata", sans-serif;
+  font-size: 0.9375rem;
+  text-align: center;
+  color: hsl(0, 100%, 100%);
+  opacity: 0.5;
 }
 
 .wrapper {
@@ -365,4 +390,13 @@ footer .footer__logo {
   .wrapper {
     max-width: 69.375rem;
   }
+}
+
+.nav__link::after {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background-color: hsl(0, 100%, 100%);
+  transform: scaleX(0);
+  transition: transform 250ms ease;
 }/*# sourceMappingURL=style.css.map */

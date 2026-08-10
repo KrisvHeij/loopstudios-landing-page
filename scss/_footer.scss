@@ -1,12 +1,53 @@
 @use "base" as *;
 
 footer {
-  padding-block: $spacing-500;
+  padding-block: $spacing-800;
   padding-inline: $spacing-300;
   background-color: $black;
 
-  .footer__logo {
-    max-width: 144px;
-    margin: 0 auto;
+  .wrapper {
+    display: grid;
+    gap: $spacing-500;
+
+    .footer__nav {
+    display: grid;
+    gap: clamp(1.5rem, calc(3.454rem - 4.071vw), 2.5rem);
+
+      .footer__logo {
+      max-width: 144px;
+      margin: 0 auto;
+      }
+
+      .secondary-nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $spacing-200;
+
+        .nav__link {
+          font-family: "Alata", sans-serif;
+          font-size: $font-size-6;
+          line-height: 1.65;
+          color: $white;
+        }
+      }
+    }
+
+    .footer__socials {
+      .footer__socials__icons {
+        margin-block-end: clamp(1rem, calc(0.523rem + 2.036vw), 1.5rem);
+        display: flex;
+        justify-content: center;
+        gap: $spacing-200;
+      }
+
+      .footer-copyright {
+        font-family: "Alata", sans-serif;
+        font-size: $font-size-6;
+        text-align: center;
+        color: $white;
+        opacity: 0.5;
+      }
+    }
   }
 }

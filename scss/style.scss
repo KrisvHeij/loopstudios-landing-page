@@ -12,3 +12,12 @@
       max-width: 69.375rem;
     }
   }
+
+  .nav__link::after {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: $white;
+    transform: scaleX(0);
+    transition: transform 250ms ease;
+  }
