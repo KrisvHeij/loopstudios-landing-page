@@ -53,10 +53,12 @@
     background-color: $black;
     transition: all 500ms ease;
     opacity: 0;
+    visibility: hidden;
 
     &.showNav {
       inset: 0;
       opacity: 1;
+      visibility: visible;
     }
 
     @media (min-width: 48rem) {

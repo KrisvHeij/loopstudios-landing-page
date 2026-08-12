@@ -88,10 +88,12 @@ button {
   background-color: hsl(0, 0%, 0%);
   transition: all 500ms ease;
   opacity: 0;
+  visibility: hidden;
 }
 .header .primary-nav.showNav {
   inset: 0;
   opacity: 1;
+  visibility: visible;
 }
 @media (min-width: 48rem) {
   .header .primary-nav {
