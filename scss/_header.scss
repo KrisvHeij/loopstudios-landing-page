@@ -30,7 +30,6 @@
   .nav-top {
     display: flex;
     justify-content: space-between;
-    // align-items: center;
   }
 
   .logo {
@@ -136,10 +135,7 @@
         font-size: clamp(2.50rem, calc(0.592rem + 8.142vw), 4.50rem);
         font-weight: $font-weight-300;
         text-transform: uppercase;
-        // color: $white;
       }
     }
   }
 }
-
-// verdergaan met width van wrapper en header-text
